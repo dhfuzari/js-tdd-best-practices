@@ -1,0 +1,9 @@
+{
+  "name": "js-tdd-in-pratice",
+  "version": "1.0.0",
+  "description": "js and test development drive",
+  "main": "index.js",
+  "repository": "git@github.com:dhfuzari/js-tdd.git",
+  "author": "Daniel Henrique Fuzari <dhfuzari@gmail.com>",
+  "license": "MIT"
+}
