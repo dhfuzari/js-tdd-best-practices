@@ -12,3 +12,9 @@
 
 - Como transpilar ES6 usando Babel
 - Gerando lib em UMD com Webpack
+
+### 3. Testes
+
+- Aprender a teoria de testes
+- Como pensar e aplicar testes desde o inicio
+- Como utilizar o Travis para testar o projeto
