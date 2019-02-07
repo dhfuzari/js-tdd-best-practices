@@ -1,9 +1,23 @@
 {
-  "name": "js-tdd-in-pratice",
-  "version": "1.0.0",
-  "description": "js and test development drive",
+  "name": "udemy-js-tdd",
+  "version": "0.0.1",
+  "description": "Curso Udemy com tdd na pratica",
   "main": "index.js",
-  "repository": "git@github.com:dhfuzari/js-tdd.git",
-  "author": "Daniel Henrique Fuzari <dhfuzari@gmail.com>",
-  "license": "MIT"
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhfuzari/udemy-js-com-tdd-na-pratica.git"
+  },
+  "keywords": [
+    "js",
+    "tdd"
+  ],
+  "author": "Daniel Henrique Fuzari <dhfuzari@gmail.com> (https://www.dhfuzari.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhfuzari/udemy-js-com-tdd-na-pratica/issues"
+  },
+  "homepage": "https://github.com/dhfuzari/udemy-js-com-tdd-na-pratica#readme"
 }
