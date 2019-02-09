@@ -15,7 +15,7 @@
     "tdd"
   ],
   "author": "Daniel Henrique Fuzari <dhfuzari@gmail.com> (https://www.dhfuzari.com/)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/dhfuzari/udemy-js-com-tdd-na-pratica/issues"
   },
