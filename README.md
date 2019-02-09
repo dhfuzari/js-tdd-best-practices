@@ -1,26 +1,5 @@
 # Udemy - Javascript com TDD na prática
 
-## Objetivos do curso:
-
-### 1. Boas práticas
-
-- Importância de um Stylehuide e como usa-lo em um projeto.
-- Hooks no Git para evitar código sujo/quebrado.
-- Outras configurações importantes para um projeto.
-
-### 2. Ferramentas
-
-- Como transpilar ES6 usando Babel
-- Gerando lib em UMD com Webpack
-
-### 3. Testes
-
-- Aprender a teoria de testes
-- Como pensar e aplicar testes desde o inicio
-- Como utilizar o Travis para testar o projeto
-
-# Udemy - Javascript com TDD na prática
-
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 An experimental project to learn and run javascript tests.
