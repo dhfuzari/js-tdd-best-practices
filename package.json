@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/dhfuzari/udemy-js-com-tdd-na-pratica/issues"
   },
-  "homepage": "https://github.com/dhfuzari/udemy-js-com-tdd-na-pratica#readme"
+  "homepage": "https://github.com/dhfuzari/udemy-js-com-tdd-na-pratica#readme",
+  "devDependencies": {
+    "eslint": "^5.13.0"
+  }
 }
