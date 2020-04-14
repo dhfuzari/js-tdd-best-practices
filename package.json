@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dhfuzari/udemy-js-com-tdd-na-pratica.git"
+    "url": "git+https://github.com/dhfuzari/js-com-tdd-na-pratica.git"
   },
   "keywords": [
     "js",
@@ -18,9 +18,9 @@
   "author": "Daniel Henrique Fuzari <dhfuzari@gmail.com> (https://www.dhfuzari.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dhfuzari/udemy-js-com-tdd-na-pratica/issues"
+    "url": "https://github.com/dhfuzari/js-com-tdd-na-pratica/issues"
   },
-  "homepage": "https://github.com/dhfuzari/udemy-js-com-tdd-na-pratica#readme",
+  "homepage": "https://github.com/dhfuzari/js-com-tdd-na-pratica#readme",
   "devDependencies": {
     "eslint": "^5.13.0",
     "eslint-config-airbnb": "^17.1.0",
