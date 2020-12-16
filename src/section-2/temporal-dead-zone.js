@@ -1,6 +1,8 @@
+/* eslint-disable no-use-before-define */
+
 // Acontece o hosting - retorna undefined
 console.log(dog);
-var dog = 'woof';
+const dog = 'woof';
 
 console.log(cat); // Erro - ReferenceError
 let cat = 'meaw';

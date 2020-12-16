@@ -1,6 +1,6 @@
-function hello(name, surname) {
-  name = name || 'Daniel Henrique';
-  surname = surname || 'Fuzari';
+function hello(_name, _surname) {
+  const name = _name || 'Daniel Henrique';
+  const surname = _surname || 'Fuzari';
   console.log(`Hello ${name} ${surname}! How are you?`);
 }
 

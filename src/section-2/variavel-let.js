@@ -1,3 +1,5 @@
+/* eslint-disable no-shadow */
+
 const animal = 'cat';
 console.log(animal);
 {

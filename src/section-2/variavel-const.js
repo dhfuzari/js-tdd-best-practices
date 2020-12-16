@@ -1,3 +1,5 @@
+/* eslint-disable no-const-assign */
+
 const secretNumber = 28;
 
 const daniel = {
