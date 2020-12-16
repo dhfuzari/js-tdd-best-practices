@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array find and findIndex</title>
+</head>
+<body>
+  <script>
+    // The Array.find() method searchs by data in an array, and returns the first found element
+    // The Array.findIndex methos searchs for the index of a given data 
+   
+    const data = [
+      {
+        name: 'Daniel',
+        age: 36,
+        city: 'Pinhal'
+      },
+      {
+        name: 'Erika',
+        age: 31,
+        city: 'Araras'
+      },
+      {
+        name: 'Maria Clara',
+        age: 0,
+        city: 'Pinhal'
+      }
+    ]
+
+    // Find 
+    const person = data.find(person => person.name === 'Maria Clara');
+    console.log('Person: ', person);
+
+    // Find Index
+    const indexPosition = data.findIndex(person => person.name === 'Maria Clara');
+    console.log(`Position(index): ${indexPosition}`);
+
+  </script>
+</body>
+</html>
