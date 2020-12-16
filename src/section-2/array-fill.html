@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array fill method</title>
+</head>
+<body>
+  <script>
+    // The fill() method changes all elements in an array to a static value, from 
+    // a start index (default 0) to an end index (default array.length)
+
+    const arr = new Array(50).fill('I\'ll do my best!');
+    console.log(arr);
+
+    const body = document.querySelector('body');
+    arr.map(item => { 
+      const paragraph = document.createElement('P');
+      paragraph.innerText = item;
+      body.appendChild(paragraph) 
+    });
+    
+  </script>
+</body>
+</html>
