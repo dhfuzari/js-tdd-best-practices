@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destructuring Objects</title>
+</head>
+<body>
+  <script>
+    const data = {
+      name: 'Daniel Henrique',
+      surName: 'Fuzari',
+      city: 'sp. Sto.
+      age: 36,
+      blog: 'http://github.com/dhfuzari',
+      social: {
+        twitter: '@dhfuzari',
+        facebook: '@dhfuzari'
+      } 
+    };
+    
+    // const name = data.name;
+    // const surName = data.surName;
+    // const twitter = data.social.twitter;
+    
+    // Destructuring name and surName values
+    const { name, surName } = data;
+    
+    // Destructuring facebook and twitter from data.social and renaming them
+    const { facebook: fb, twitter: twt } = data.social;
+
+    // Destructuring nested values
+    const { social: { twitter, facebook }} = data;
+
+    // Destructuring nested values and renaming then
+    const { social: { twitter: twitterProfile, facebook: facebokProfile }} = data;
+
+    // Destructuring with default values
+    const { city = 'Esp. Sto. do Pinhal' } = data;
+    
+    console.log(name);
+    console.log(surName);
+    console.log(city);
+    console.log(`Facebook: `, fb, facebook, facebokProfile);
+    console.log(`Twitter: `, twt, twitter, twitterProfile);
+  </script>
+</body>
+</html>
