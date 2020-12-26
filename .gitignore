@@ -79,5 +79,8 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
+# Desktop Service Stores files
+.DS_Store
+
 # Visual Studio Code Settings
 .vscode
