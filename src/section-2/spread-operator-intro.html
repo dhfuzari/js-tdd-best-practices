@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spread Operator - Introduction</title>
+</head>
+<body>
+  <script>
+    const front = ['react', 'vue', 'angular'];
+    const back = ['python', 'ruby', 'node.js'];
+
+    // Array spread values
+    console.log(front);
+    // First approach using destructuring
+    const [front1, front2, front3] = front;
+    console.log(front1, front2, front3);
+    // Second approach using  
+    console.log(...front);
+
+
+    // Concating arrays
+    // First approvach
+    let fullStack = [];
+    fullStack = fullStack.concat(front);
+    fullStack.push('RxJS');
+    fullStack = fullStack.concat(back);
+    console.log('fullStack: ', fullStack);
+    // Second approach  
+    fullStack = [...front, 'RxJS', ...back];
+    console.log('fullstack: ', fullStack);
+  </script>
+</body>
+</html> 
