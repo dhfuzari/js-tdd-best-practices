@@ -1,10 +1,8 @@
 {
-  "extends": "airbnb-base",
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["prettier"],
   "rules": {
-    "linebreak-style": [
-      "error",
-      "windows"
-    ],
+    "prettier/prettier": ["error"],
     "no-console": 0
   }
 }
