@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // all[...] and race[...] Promise static methods
+
+    // Promise.all() -> This method recieves an array of promises as parameter, and returns a promise
+    // that will ve resolved only when all promises from array are resolved or any of then are rejected
+    const currency = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve({ currency: "Euro", value: 6.15});
+      }, 3500)
+    });
+
+    const countries = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(['Ireland', 'England', 'Scotland']);
+      }, 1000)
+    });
+
+    Promise.all([currency, countries])
+      .then((responses) => console.log(responses))
+      .catch((err) => console.log(err));
+
+    // Promise.race() -> This method recieves an array of promises as parameter, and returns a promise
+    // that will be resolved as soon as any promises from array is resolved, or, it returns a promise
+    // that will be rejected as soon as any promises from array is rejected. 
+    const currencyLa = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve({ currency: "Dollar", value: 5.22});
+      }, 6500)
+    });
+
+    const countriesLa = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(['USA', 'Canada', ]);
+      }, 5000)
+    });
+
+    Promise.race([currencyLa, countriesLa])
+      .then((responses) => console.log(responses))
+      .catch((err) => console.log(err))
+
+  </script>
+</body>
+</html>
