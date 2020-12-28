@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promises | Static methods - all[...]</title>
+</head>
+<body>
+  <h1>Posts list</h1>
+  <ul id="posts-list"></ul>
+  <script>
+    const postOne = fetch('https://jsonplaceholder.typicode.com/posts/1');
+    const postTwo = fetch('https://jsonplaceholder.typicode.com/posts/2');
+    const postThree = fetch('https://jsonplaceholder.typicode.com/posts/3');
+
+    const allPosts = [postOne, postTwo, postThree];
+
+    const process = (promise) => {
+      promise
+        .then((data) => {
+          postsLit = document.querySelector("#posts-list");
+          const postElement = document.createElement('LI'); 
+          const textContent = document.createTextNode(data.title);
+          postElement.appendChild(textContent);
+          postsLit.appendChild(postElement)
+        })
+        .catch((err) => console.log(err))
+    }
+
+    Promise.all(allPosts)
+      .then((data) => data.forEach(promise => process(promise.json())))
+      .catch((err) => console.error(err))
+  </script>
+</body>
+</html>
