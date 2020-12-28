@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promises - Intro</title>
+</head>
+<body>
+  <h1>Posts list</h1>
+  <ul id="posts-list"></ul>
+  <script>
+    const posts = fetch('https://jsonplaceholder.typicode.com/posts');
+
+    // Promise possibles status: Pending, Resolved(Fulfilled), Rejected
+    console.log('Posts - Fetch object: ', posts);
+
+    // The Fetch methos returns a "Response" type object, that implements the Body interface, wich implements
+    // the json() method, a util method to handel the response and transform it in a json object
+    posts
+      .then((data) => data.json())
+      .then((data) => { 
+        postsLit = document.querySelector("#posts-list");
+        data.forEach((element) => {
+          const postElement = document.createElement('LI'); 
+          const textContent = document.createTextNode(element.title);
+          postElement.appendChild(textContent);
+          postsLit.appendChild(postElement)
+        })
+      })
+      .catch((err) => { console.log('Posts Rejected: ', err) });
+  </script>
+</body>
+</html>
