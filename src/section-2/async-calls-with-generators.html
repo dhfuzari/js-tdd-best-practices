@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Async calls with generators</title>
+</head>
+<body>
+  <script>
+    const usersUri = "https://jsonplaceholder.typicode.com/users";
+    const postsUri = "https://jsonplaceholder.typicode.com/posts";
+    const albumsUri = "https://jsonplaceholder.typicode.com/albums";
+
+    function ajax(url) {
+      return fetch(url)
+        .then((response) => response.json())
+        .then((data) => ajaxData.next(data)) 
+    }
+
+    function* ajaxGen() {
+      console.log("Searching users...");
+      const users = yield ajax(usersUri);
+      console.log("🚀 ~ file: async-calls-with-generators.html ~ line 23 ~ function*ajaxGen ~ users", users)
+
+      console.log("Searching posts...");
+      const posts = yield ajax(postsUri);
+      console.log("🚀 ~ file: async-calls-with-generators.html ~ line 27 ~ function*ajaxGen ~ posts", posts)
+      
+      console.log("Searching albums...");
+      const albums = yield ajax(albumsUri);
+      console.log("🚀 ~ file: async-calls-with-generators.html ~ line 31 ~ function*ajaxGen ~ albums", albums)
+    }
+
+    const ajaxData = ajaxGen();
+    ajaxData.next();
+  </script>
+</body>
+</html>
