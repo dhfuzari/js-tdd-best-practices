@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proxies - intro</title>
+</head>
+<body>
+  <script>
+    // The Proxy object enables you to create a proxy for another object, wich can intercept
+    // and redefine fundamental operations for that object
+
+    const person = {
+      name: "Daniel",
+      age: 36,
+    };
+
+    const personHandler = {
+      get(target, name) {
+        console.log("🚀 ~ file: proxies.html ~ line 15 ~ person", personHandler);
+        console.log("🚀 ~ file: proxies.html ~ line 16 ~ get ~ target", target);
+        console.log('target === person', target === person);
+        console.log('Alguém está solicitando o nome');
+        return target[name];
+      },
+      set(target, name, value) {
+        console.log('Alguém está alterando o nome');
+        target[name] = value;
+      }
+    }
+
+    // The Proxy object is created with two parameters: 
+    // 1- The target object(person)
+    // 2- The handler object(personHandler)
+    const proxy = new Proxy(person, personHandler);
+  </script>
+</body>
+</html>
