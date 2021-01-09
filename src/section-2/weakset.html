@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weakset</title>
+  </head>
+  <body>
+    <script>
+      // WeakSet objects are collections of objects. Just as with Sets, each object in a 
+      // WeakSet may occur only once; all objects in a WeakSet's collection are unique.
+      const obj1 = {
+        name: 'JS',
+        age: 25
+      };
+      const obj2 = {
+        name: 'PYTHON',
+        age: 29
+      };
+
+      const ws = new WeakSet([obj1, obj2]);
+
+      console.log('ws.has(obj1): ', ws.has(obj1));
+      console.log('ws.has(obj2): ', ws.has(obj2));
+
+      ws.add({name: 'JAVA', age: 32})
+      console.log("🚀 ~ file: weakset.html ~ line 27 ~ ws", ws)
+
+      
+    </script>
+  </body>
+</html>
