@@ -1,6 +1,6 @@
 let animal;
 function sayAnimal() {
-  animal = 'cat';
+  animal = "cat";
   console.log(animal);
 }
 sayAnimal();

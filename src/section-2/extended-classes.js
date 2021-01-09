@@ -10,7 +10,7 @@ class Animal {
   }
 }
 
-const elephant = new Animal('Elephant');
+const elephant = new Animal("Elephant");
 elephant.hello();
 
 class Dog extends Animal {
@@ -24,6 +24,6 @@ class Dog extends Animal {
   }
 }
 
-const dog = new Dog('Dog', 'Au-au');
+const dog = new Dog("Dog", "Au-au");
 dog.hello();
 dog.bark();

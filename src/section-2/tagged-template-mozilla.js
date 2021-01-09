@@ -1,4 +1,4 @@
-const person = 'Mike';
+const person = "Mike";
 const age = 100;
 
 function myTagFunction(strings, ...restParams) {
@@ -15,9 +15,9 @@ function myTagFunction(strings, ...restParams) {
 
   let ageStr;
   if (ageExp > 99) {
-    ageStr = 'centenarian';
+    ageStr = "centenarian";
   } else {
-    ageStr = 'youngster';
+    ageStr = "youngster";
   }
 
   // We can even return a string built using a template literal

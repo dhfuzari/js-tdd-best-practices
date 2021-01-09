@@ -8,10 +8,10 @@ function Animal(kind, sound) {
   };
 }
 
-const dog = new Animal('dog', 'bark');
+const dog = new Animal("dog", "bark");
 console.log(dog);
 
-const cat = new Animal('cat', 'meow');
+const cat = new Animal("cat", "meow");
 console.log(cat);
 
 cat.walk();

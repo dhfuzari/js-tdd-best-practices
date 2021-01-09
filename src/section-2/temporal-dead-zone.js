@@ -2,10 +2,10 @@
 
 // Acontece o hosting - retorna undefined
 console.log(dog);
-const dog = 'woof';
+const dog = "woof";
 
 console.log(cat); // Erro - ReferenceError
-let cat = 'meaw';
+let cat = "meaw";
 
 console.log(pig); // Erro - ReferenceError
-const pig = 'ronk';
+const pig = "ronk";

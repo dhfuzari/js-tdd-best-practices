@@ -3,7 +3,7 @@
 const secretNumber = 28;
 
 const daniel = {
-  name: 'Daniel',
+  name: "Daniel",
   age: 18,
 };
 
@@ -17,5 +17,5 @@ try {
   secretNumber = 30;
   console.log(secretNumber);
 } catch (err) {
-  console.log('Error: ', err);
+  console.log("Error: ", err);
 }

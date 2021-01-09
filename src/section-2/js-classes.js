@@ -7,7 +7,7 @@ class Animal {
 
   // Static class method
   static info() {
-    console.log('This is a class to create animals');
+    console.log("This is a class to create animals");
   }
 
   // Common method
@@ -32,10 +32,10 @@ class Animal {
   }
 }
 
-const dog = new Animal('dog', 'bark');
+const dog = new Animal("dog", "bark");
 console.log(dog);
 
-const cat = new Animal('cat', 'meow');
+const cat = new Animal("cat", "meow");
 console.log(cat);
 
 cat.walk();
@@ -47,7 +47,7 @@ dog.hello();
 cat.hello();
 console.log(dog.kindAnimal);
 console.log(cat.kindAnimal);
-cat.kindAnimal = 'white cat';
-dog.kindAnimal = 'black dog';
+cat.kindAnimal = "white cat";
+dog.kindAnimal = "black dog";
 console.log(dog.kindAnimal);
 console.log(cat.kindAnimal);

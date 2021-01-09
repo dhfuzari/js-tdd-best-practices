@@ -1,5 +1,5 @@
-const firstName = 'Daniel Henrique';
-const lastName = 'Fuzari';
+const firstName = "Daniel Henrique";
+const lastName = "Fuzari";
 const age = 36;
 
 const person = {
