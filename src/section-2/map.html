@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map Object</title>
+  </head>
+  <body>
+    <script>
+      // The Map object holds key-value pairs and remembers the original insertion order of the keys. 
+      // Any value (both objects and primitive values) may be used as either a key or a value.
+      const myMap = new Map();
+
+      const keyString = "a simple string";
+      const keyObj = { id: 1, value: 1000 };
+      const keyFunc = () => { console.log("KeyFunc"); }
+
+      // Setting the values
+      myMap.set(keyString, "value associated with 'a simple string'");
+      myMap.set(keyObj, "value associated with key object");
+      myMap.set(keyFunc, "value associated with key function");
+
+      console.log('myMap.size: ', myMap.size);
+
+      // Getting the values
+      console.log("myMap.get(keyString): ", myMap.get(keyString));
+      console.log("myMap.get(keyFunc): ", myMap.get(keyFunc));
+      console.log("myMap.get(keyObj): ", myMap.get(keyObj));
+
+      console.log("myMap.get('a simple string'): ", myMap.get('a simple string'));
+      console.log("myMap.get({ id: 1, value: 1000}): ", myMap.get({ id: 1, value: 1000}));
+      console.log("myMap.get(() => { console.log('keyFunc')}): ", myMap.get(() => { console.log('keyFunc')}));
+    </script>
+  </body>
+</html>
