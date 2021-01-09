@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weakset</title>
+  </head>
+  <body>
+    <script>
+      // The WeakMap object is a collection of key/value pairs in which the keys are weakly referenced. 
+      // The keys must be objects and the values can be arbitrary values.
+      let obj1 = {
+        name: 'JS',
+        age: 25
+      };
+      const obj2 = {
+        name: 'PYTHON',
+        age: 29
+      };
+
+      const wm = new WeakMap();
+
+      wm.set(obj1, 'Javascript info');
+      wm.set(obj2, 'Python info');
+      wm.set(obj2, 'Python info');
+      wm.set(obj2, 'Python info');
+      wm.set(obj2, 'Python info');
+      console.log("🚀 ~ file: weakmap.html ~ line 25 ~ wm", wm)
+
+      obj1 = null;
+      console.log("🚀 ~ file: weakmap.html ~ line 25 ~ wm", wm)
+    </script>
+  </body>
+</html>
