@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Async/Await error handling</title>
+</head>
+<body>
+  <script>   
+    async function getPostsAsynAwait() {
+      try {
+        const reponse = await fetch('https://jsonplaceholder.typicode.com/posts');
+        const data = await reponse.json();
+        data.map(post => { console.log(post) });
+      } catch(err) {
+        console.error(err);
+      }
+    }
+    getPostsAsynAwait();
+  </script>
+</body>
+</html>
