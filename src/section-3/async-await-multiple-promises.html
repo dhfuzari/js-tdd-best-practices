@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Async/Await multiple promises</title>
+</head>
+<body>
+  <script>   
+    // Handling two promises with Promise.all
+    async function getUsersStatic() {
+      const daniel = fetch('https://api.github.com/users/dhfuzari').then(response => response.json());
+      const willian = fetch('https://api.github.com/users/willianjusten').then(response => response.json());
+      const promises = await Promise.all([daniel, willian]);
+      console.log("🚀 ~ file: async-await-multiple-promises.html ~ line 15 ~ getUsersStatic ~ promises", promises)
+    }
+    getUsersStatic();
+
+    // Handling multiple promisses with Promise.all
+    async function getUsersDynamic(users) {
+      const promises = users.map(user => fetch(`https://api.github.com/users/${user}`).then(response => response.json()));
+      const githubUsers = await Promise.all(promises);
+      console.log("🚀 ~ file: async-await-multiple-promises.html ~ line 23 ~ getUsersDynamic ~ githubUsers", githubUsers)
+    }
+    getUsersDynamic(['dhfuzari', 'willianjusten', 'lhbzr']);
+  </script>
+</body>
+</html>
