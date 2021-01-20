@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PadStart and PadEnd</title>
+</head>
+<body>
+  <script>   
+    // String.prototype.padStart/padEnd
+    console.log('1'.padStart(10, '*'));
+    console.log('1'.padEnd(10, '*'))
+
+    // Complete example 1
+    const emptyString = '';
+    console.log("🚀 ~ file: padstart-padend.html ~ line 12 ~ emptyString", emptyString);
+    const hi5String = emptyString.padStart(5, 'Hi5');
+    console.log("🚀 ~ file: padstart-padend.html ~ line 14 ~ hi5String", hi5String)
+
+    // Complete example 2
+    const lastName = 'Fuzari';
+    console.log("🚀 ~ file: padstart-padend.html ~ line 17 ~ lastName", lastName)
+    const fullName1 = lastName.padStart(13, 'Daniel ')
+    console.log("🚀 ~ file: padstart-padend.html ~ line 19 ~ fullName1", fullName1)
+
+    const firstName = 'Daniel';
+    console.log("🚀 ~ file: padstart-padend.html ~ line 27 ~ firstName", firstName)
+    const fullName2 = firstName.padEnd(13, ' Fuzari');
+    console.log("🚀 ~ file: padstart-padend.html ~ line 30 ~ fullName2", fullName2)
+  </script>
+</body>
+</html>
