@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trailing commas</title>
+</head>
+<body>
+  <script>
+    // Now, in JS you can use trailling/final commas in arrays, objects, function paramenters declarations 
+    // and invoking function paramenters
+
+    const arr = [
+      1,
+      2,
+      3,
+      4, // extra comma
+    ];
+    console.log("🚀 ~ file: trailing-commas.html ~ line 11 ~ arr", arr);
+
+    const obj = {
+      prop1: 'value',
+      prop2: 'value',
+      prop3: 'value', // extra comma
+    }
+    console.log("🚀 ~ file: trailing-commas.html ~ line 18 ~ obj", obj)
+
+    function sum(a,b,) { // extra comma here
+      return a + b;
+    }
+    
+    console.log("🚀 ~ file: trailing-commas.html ~ line 21 ~ sum ~ sum", sum(10,40,)); // extra comma here
+  </script>
+</body>
+</html>
