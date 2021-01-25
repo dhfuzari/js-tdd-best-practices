@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object.entries</title>
+</head>
+<body>
+  <script>
+    // The object entries method returns an array of a given object's own enumerables 
+    // string-keyed propertiey [key, value] pairs
+
+    const animals = {
+      camel: 3,
+      llama: 2,
+      allpaca: 5
+    };
+
+    console.log("🚀 ~ file: object-entries.html ~ line 19 ~ Object.keys(animals)", Object.keys(animals));
+    console.log("🚀 ~ file: object-entries.html ~ line 20 ~ Object.values(animals)", Object.values(animals))
+    console.log("🚀 ~ file: object-entries.html ~ line 11 ~ Object.entries(animals)", Object.entries(animals));
+
+    const animalsMapEntries = new Map(Object.entries(animals));
+    console.log("🚀 ~ file: object-entries.html ~ line 24 ~ animalsMapEntries", animalsMapEntries);
+    console.log("🚀 ~ file: object-entries.html ~ line 25 ~ animalsMapEntries.size", animalsMapEntries.size)
+    console.log("🚀 ~ file: object-entries.html ~ line 26 ~ animalsMapEntries.has('camel')", animalsMapEntries.has('camel'))
+    console.log("🚀 ~ file: object-entries.html ~ line 27 ~ Array.from(animalsMapEntries)", Array.from(animalsMapEntries))
+  </script>
+</body>
+</html>
