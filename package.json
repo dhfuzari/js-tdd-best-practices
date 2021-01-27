@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "lint": "./node_modules/.bin/eslint src/**/*.js"
+    "lint": "./node_modules/.bin/eslint src/**/*.js",
+    "build": "./node_modules/.bin/webpack --color --progress",
+    "watch": "npm run build -- --watch"
   },
   "repository": {
     "type": "git",
@@ -22,9 +24,9 @@
   },
   "homepage": "https://github.com/dhfuzari/js-com-tdd-na-pratica#readme",
   "devDependencies": {
-    "babel-core": "^6.26.3",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
     "babel-loader": "^8.2.2",
-    "babel-preset-es2015-native-modules": "^6.9.4",
     "eslint": "^7.12.1",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-airbnb-base": "^13.1.0",
@@ -43,5 +45,8 @@
     "hooks": {
       "pre-push": "npm run lint"
     }
+  },
+  "dependencies": {
+    "ramda": "^0.27.1"
   }
 }
