@@ -6,8 +6,8 @@
   "scripts": {
     "test": "test",
     "lint": "./node_modules/.bin/eslint src/**/*.js",
-    "build": "NODE_ENV='production' ./node_modules/.bin/webpack --color --progress",
-    "watch": "NODE_ENV='development' ./node_modules/.bin/webpack --color --progress --watch"
+    "build": "NODE_ENV='production' ./node_modules/.bin/webpack --color --progress --mode=production",
+    "watch": "NODE_ENV='development' ./node_modules/.bin/webpack --color --progress --watch --mode=development"
   },
   "repository": {
     "type": "git",

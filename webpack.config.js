@@ -1,6 +1,7 @@
 const webpack = require("webpack");
 
 const nodeENV = process.env.NODE_ENV || "production";
+const minimizeBundle = nodeENV === 'production';
 
 module.exports = {
   entry: {
@@ -22,6 +23,9 @@ module.exports = {
         },
       },
     ],
+  },
+  optimization: {
+    minimize: minimizeBundle
   },
   plugins: [
     new webpack.DefinePlugin({
