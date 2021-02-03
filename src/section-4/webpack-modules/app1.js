@@ -2,6 +2,8 @@
 // * => it loads everithing from lib
 // as => it`s an alias for all methods imported from library as "*"
 import * as R from "ramda";
+import react from "react";
+import reactDOM from "react-dom";
 
 import sumFunction, {
   sub,

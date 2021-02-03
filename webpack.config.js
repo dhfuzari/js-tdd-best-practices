@@ -1,8 +1,10 @@
 const webpack = require("webpack");
 
+const nodeENV = process.env.NODE_ENV || "production";
+
 module.exports = {
   entry: {
-    filename: "./src/section-4/webpack-modules/app.js",
+    filename: "./src/section-4/webpack-modules/app1.js",
   },
   output: {
     filename: "build.js",
@@ -21,4 +23,9 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      "process.env": { NODE_ENV: JSON.stringify(nodeENV) },
+    }),
+  ],
 };
