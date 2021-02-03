@@ -1,7 +1,7 @@
 const webpack = require("webpack");
 
 const nodeENV = process.env.NODE_ENV || "production";
-const minimizeBundle = nodeENV === 'production';
+const minimizeBundle = nodeENV === "production";
 
 module.exports = {
   entry: {
@@ -25,8 +25,9 @@ module.exports = {
     ],
   },
   optimization: {
-    minimize: minimizeBundle
+    minimize: minimizeBundle,
   },
+  devtool: "source-map",
   plugins: [
     new webpack.DefinePlugin({
       "process.env": { NODE_ENV: JSON.stringify(nodeENV) },
