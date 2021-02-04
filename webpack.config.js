@@ -28,6 +28,9 @@ module.exports = {
     minimize: minimizeBundle,
   },
   devtool: "source-map",
+  devServer: {
+    contentBase: "./src/section-4/webpack-modules",
+  },
   plugins: [
     new webpack.DefinePlugin({
       "process.env": { NODE_ENV: JSON.stringify(nodeENV) },
